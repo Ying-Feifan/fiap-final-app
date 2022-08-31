@@ -1,0 +1,10 @@
+{
+  "expo": {
+    "name": "fiap-final-app",
+    "slug": "fiap-final-app",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  }
+}

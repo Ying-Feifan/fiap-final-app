@@ -14,7 +14,7 @@ export function Login() {
                     <View style={{
                         alignItems: 'center',
                         justifyContent: 'center',
-                        paddingBottom: '30px'
+                        paddingBottom: 30
                     }}>
                         <Text style={styles.title}> Login </Text>
                         <Text style={styles.subTitle}> Sign in to continue. </Text>
@@ -26,9 +26,8 @@ export function Login() {
                     <Text style={styles.label}> Password </Text>
                     <TextInput secureTextEntry={true} style={styles.textInput} />
 
-                    <TouchableOpacity
-                        style={styles.button}
-                    >        <Text style={{ color: 'white', fontSize: '20px' }}>Log in</Text>
+                    <TouchableOpacity style={styles.button}>
+                        <Text style={{ color: '#fff', fontSize: 20 }}>Log in</Text>
                     </TouchableOpacity>
 
                     <View style={styles.smallText}>
@@ -69,40 +68,38 @@ const styles = StyleSheet.create({
         justifyContent: 'center',
     },
     title: {
-        fontSize: '60px',
+        fontSize: 60,
     },
     subTitle: {
-        fontSize: '15px'
+        fontSize: 15
     },
     label: {
-        fontSize: '15px',
+        fontSize: 15,
     },
     textInput: {
-        fontSize: '20px',
-        padding: '20px',
-        width: '250px',
-        height: '55px',
+        fontSize: 20,
+        padding: 20,
+        width: 250,
+        height: 55,
         border: '0.2px solid black',
-        borderRadius: '20px'
+        borderRadius: 20
     },
     button: {
         fontSize: '20px',
         width: '250px',
         marginTop: '20px',
         backgroundColor: 'black',
-        height: '50px',
+        height: 50,
         border: '0.2px solid black',
-        borderRadius: '10px',
+        borderRadius: 10,
         alignItems: "center",
         justifyContent: 'center',
         padding: 10
     },
     smallText: {
-        fontSize: '15px',
-        paddingTop: '10px',
+        fontSize: 15,
+        paddingTop: 10,
         alignItems: "center",
         justifyContent: 'center',
     }
-
-
 });

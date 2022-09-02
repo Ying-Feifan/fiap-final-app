@@ -1,11 +1,15 @@
 import React from 'react';
-// import {Login} from './src/screens/navigation/main/Login';
-import Login from './src/screens/Login'
+import Loading from './src/components/Loading';
+import Login from './src/screens/Login';
+import Routes from './src/routes/tab.route';
+import {NavigationContainer} from '@react-navigation/native';
 
 export default function App() {
   return (
     <>
-    <Login />
+    <NavigationContainer>
+      <Routes />
+    </NavigationContainer>
     </>
   );
 }

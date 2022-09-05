@@ -12,6 +12,6 @@ export default function Routes(){
             <Tab.Screen name="HomeStack" component={StackRoute} />
             <Tab.Screen name="Map" component={Map} />
             <Tab.Screen name="Settings" component={Settings} />
-        </Tab.Navigator> 
+        </Tab.Navigator>
     )
 }

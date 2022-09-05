@@ -3,13 +3,10 @@ import styles from './styles';
 
 
 
-export default function Login() {
+export default function SignUp() {
 
     return (
         <View style={styles.container}>
-            <View style={styles.up}>
-                <Text> LOGO </Text>
-            </View>
             <View style={styles.card}>
                 <View>
                     <View style={{
@@ -17,8 +14,7 @@ export default function Login() {
                         justifyContent: 'center',
                         paddingBottom: 30
                     }}>
-                        <Text style={styles.title}> Login </Text>
-                        <Text style={styles.subTitle}> Sign in to continue. </Text>
+                        <Text style={styles.title}>Create account</Text>
                     </View>
 
                     <Text style={styles.label}> Username </Text>
@@ -27,14 +23,15 @@ export default function Login() {
                     <Text style={styles.label}> Password </Text>
                     <TextInput secureTextEntry={true} style={styles.textInput} />
 
-                    <TouchableOpacity style={styles.button}>
-                        <Text style={{ color: '#fff', fontSize: 20 }}>Log in</Text>
-                    </TouchableOpacity>
+                    <Text style={styles.label}> Email </Text>
+                    <TextInput style={styles.textInput} />
 
-                    <View style={styles.smallText}>
-                        <Text> Forgot Password? </Text>
-                        <Text> Sign Up ! </Text>
-                    </View>
+                    <Text style={styles.label}> Mobile </Text>
+                    <TextInput style={styles.textInput} />
+
+                    <TouchableOpacity style={styles.button}>
+                        <Text style={{ color: '#fff', fontSize: 20 }}>Create</Text>
+                    </TouchableOpacity>
                 </View>
             </View>
         </View>

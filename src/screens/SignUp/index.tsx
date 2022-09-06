@@ -1,10 +1,7 @@
 import { View, Text, TextInput, TouchableOpacity } from 'react-native';
 import styles from './styles';
 
-
-
 export default function SignUp() {
-
     return (
         <View style={styles.container}>
             <View style={styles.card}>

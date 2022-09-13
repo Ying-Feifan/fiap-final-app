@@ -1,9 +1,35 @@
+import { useState } from 'react';
 import { View, Text, TextInput, TouchableOpacity } from 'react-native';
+import loginService from '../../api/login-service';
 import styles from './styles';
 
 
 
-export default function Login() {
+export default function Login({ navigation }) {
+
+    const [email, setEmail] = useState("");
+
+    const [password, setPassword] = useState("");
+
+    const _login = async () => {
+        let response = await loginService.login(email, password);
+        console.log(response);
+        if (response) {
+            navigation.navigate('Home')
+        }
+    }
+
+    const _signUn = () => {
+        navigation.navigate('SignUp')
+    }
+
+    const validateEmail = (email) => {
+        let reg = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w\w+)+$/;
+        if (reg.test(email)) {
+            //TODO: disable button
+        }
+
+    }
 
     return (
         <View style={styles.container}>
@@ -21,19 +47,26 @@ export default function Login() {
                         <Text style={styles.subTitle}> Sign in to continue. </Text>
                     </View>
 
-                    <Text style={styles.label}> Username </Text>
-                    <TextInput style={styles.textInput} />
+                    <Text style={styles.label}> Email </Text>
+                    <TextInput onChangeText={(value) => {
+                        validateEmail(value);
+                        setEmail(value);
+                    }} style={styles.textInput} />
 
                     <Text style={styles.label}> Password </Text>
-                    <TextInput secureTextEntry={true} style={styles.textInput} />
+                    <TextInput secureTextEntry={true} onChangeText={(value) => {
+                        setPassword(value);
+                    }} style={styles.textInput} />
 
-                    <TouchableOpacity style={styles.button}>
+                    <TouchableOpacity onPress={_login} style={styles.button}>
                         <Text style={{ color: '#fff', fontSize: 20 }}>Log in</Text>
                     </TouchableOpacity>
 
                     <View style={styles.smallText}>
                         <Text> Forgot Password? </Text>
-                        <Text> Sign Up ! </Text>
+                        <TouchableOpacity onPress={_signUn}>
+                            <Text> Sign Up ! </Text>
+                        </TouchableOpacity>
                     </View>
                 </View>
             </View>

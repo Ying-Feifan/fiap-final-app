@@ -11,15 +11,16 @@ import FavButton from '../components/FavButton';
 import {theme} from '../assets/colors';
 
 import { FontAwesome5, MaterialCommunityIcons, FontAwesome } from '@expo/vector-icons';
+import Home from '../screens/Home';
 
 const Tab = createBottomTabNavigator();
 
 export default function Routes(){
     return(
-        <Tab.Navigator screenOptions={{headerShown: false}}>
+        <Tab.Navigator screenOptions={{headerShown: false}} initialRouteName='Home'>
             <Tab.Screen 
-                name="StackRoute" 
-                component={StackRoute}
+                name="Home" 
+                component={Home}
                 options={{
                   tabBarLabel: 'Home',
                   tabBarActiveTintColor: theme.colors.white,

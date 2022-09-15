@@ -7,8 +7,8 @@ export default function App() {
   return (
     <>
     <NavigationContainer>
-      <LoginRoutes/>
-      {/* <Routes /> */}
+      {/* <LoginRoutes/> */}
+      <Routes />
     </NavigationContainer>
     </>
   );

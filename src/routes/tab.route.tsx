@@ -19,8 +19,8 @@ export default function Routes(){
     return(
         <Tab.Navigator screenOptions={{headerShown: false}} initialRouteName='Home'>
             <Tab.Screen 
-                name="Home" 
-                component={Home}
+                name="StackRoute" 
+                component={StackRoute}
                 options={{
                   tabBarLabel: 'Home',
                   tabBarActiveTintColor: theme.colors.white,

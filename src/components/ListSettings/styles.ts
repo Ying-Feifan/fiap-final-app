@@ -16,7 +16,7 @@ export const styles = StyleSheet.create({
     },
     titleButton: {
         textAlign: 'center',
-        paddingRight: 130,
+        paddingRight: 150,
         fontSize: 19
     },
     containerIcon: {
@@ -27,7 +27,12 @@ export const styles = StyleSheet.create({
         justifyContent: 'center',
         marginTop: 30,
         backgroundColor: theme.colors.red,
-        borderRadius: 5
+        borderRadius: 5,
+        height: 40
     },
-    textLogout: {}
+    textLogout: {
+        color: theme.colors.white,
+        fontSize: 23,
+        fontWeight: 'bold'
+    }
 })

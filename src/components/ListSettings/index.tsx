@@ -1,7 +1,7 @@
 import React from 'react';
 import { TouchableOpacity, Text, View, ScrollView } from 'react-native';
 
-import {FontAwesome5} from '@expo/vector-icons';
+import {FontAwesome5, FontAwesome, Ionicons, MaterialIcons} from '@expo/vector-icons';
 
 import { styles } from './styles';
 import { theme } from '../../assets/colors';
@@ -9,38 +9,23 @@ import { theme } from '../../assets/colors';
 const dataSettings = [
     {
         key: String(Math.random()),
-        name: 'Editar Pefil',
+        name: 'Meu Perfil',
         iconType: <FontAwesome5 name="user-edit" color={theme.colors.black} size={20} />,
     },
     {
         key: String(Math.random()),
-        name: 'Editar Pefil',
-        iconType: <FontAwesome5 name="user-edit" color={theme.colors.black} size={20} />,
+        name: 'Assinatura',
+        iconType: <FontAwesome name="credit-card" color={theme.colors.black} size={20} />,
     },
     {
         key: String(Math.random()),
-        name: 'Editar Pefil',
-        iconType: <FontAwesome5 name="user-edit" color={theme.colors.black} size={20} />,
+        name: 'Configurações',
+        iconType: <Ionicons name="settings" color={theme.colors.black} size={20} />,
     },
     {
         key: String(Math.random()),
-        name: 'Editar Pefil',
-        iconType: <FontAwesome5 name="user-edit" color={theme.colors.black} size={20} />,
-    },
-    {
-        key: String(Math.random()),
-        name: 'Editar Pefil',
-        iconType: <FontAwesome5 name="user-edit" color={theme.colors.black} size={20} />,
-    },
-    {
-        key: String(Math.random()),
-        name: 'Editar Pefil',
-        iconType: <FontAwesome5 name="user-edit" color={theme.colors.black} size={20} />,
-    },
-    {
-        key: String(Math.random()),
-        name: 'Editar Pefil',
-        iconType: <FontAwesome5 name="user-edit" color={theme.colors.black} size={20} />,
+        name: 'Suporte',
+        iconType: <MaterialIcons name="contact-support" color={theme.colors.black} size={20} />,
     },
 ]
 
@@ -58,7 +43,7 @@ export function ListSettings() {
       </View>
       )}
       <TouchableOpacity style={styles.logoutButton}>
-        <Text style={styles.textLogout}>LogOut</Text>
+        <Text style={styles.textLogout}>Sair</Text>
       </TouchableOpacity>
     </>
   );

@@ -57,6 +57,7 @@ export default function Routes(){
                 component={Favorites}
                 options={{
                     tabBarLabel: '',
+                    tabBarStyle: {backgroundColor: theme.colors.dark, height: 85, borderTopRightRadius: 12, borderTopLeftRadius: 12},
                     tabBarIcon: ({focused}) => {
                         return focused
                         ?

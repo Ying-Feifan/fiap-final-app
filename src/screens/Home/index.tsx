@@ -16,10 +16,10 @@ export default function Home() {
           source={require('../../assets/img/feed-img.png')}
           style={styles.feedImg} />
         <Text style={styles.feedContent}>
-        <p>A ajuda psicológica deve ser procurada por qualquer pessoa que queira entender e lidar melhor com as suas emoções para melhorar a sua qualidade de vida.</p>
-        <p>No entanto, alguns casos requerem urgência, devido à gravidade da situação.</p>
-        <p>Se não forem devidamente tratados, os problemas de ordem emocional podem afetar a nossa saúde física. O estresse, por exemplo, pode provocar dores de cabeça, resfriados, doenças crônicas no estômago e perda do desejo sexual.</p>
-        <p>Confira, a seguir, alguns dos sintomas que indicam a necessidade imediata de fazer terapia.</p>
+        A ajuda psicológica deve ser procurada por qualquer pessoa que queira entender e lidar melhor com as suas emoções para melhorar a sua qualidade de vida.{'\n'}
+        No entanto, alguns casos requerem urgência, devido à gravidade da situação.{'\n'}
+        Se não forem devidamente tratados, os problemas de ordem emocional podem afetar a nossa saúde física. O estresse, por exemplo, pode provocar dores de cabeça, resfriados, doenças crônicas no estômago e perda do desejo sexual.{'\n'}
+        Confira, a seguir, alguns dos sintomas que indicam a necessidade imediata de fazer terapia.{'\n'}
         </Text>
       </View>
 
@@ -29,10 +29,10 @@ export default function Home() {
           source={require('../../assets/img/feed-img.png')}
           style={styles.feedImg} />
         <Text style={styles.feedContent}>
-        <p>A ajuda psicológica deve ser procurada por qualquer pessoa que queira entender e lidar melhor com as suas emoções para melhorar a sua qualidade de vida.</p>
-        <p>No entanto, alguns casos requerem urgência, devido à gravidade da situação.</p>
-        <p>Se não forem devidamente tratados, os problemas de ordem emocional podem afetar a nossa saúde física. O estresse, por exemplo, pode provocar dores de cabeça, resfriados, doenças crônicas no estômago e perda do desejo sexual.</p>
-        <p>Confira, a seguir, alguns dos sintomas que indicam a necessidade imediata de fazer terapia.</p>
+        A ajuda psicológica deve ser procurada por qualquer pessoa que queira entender e lidar melhor com as suas emoções para melhorar a sua qualidade de vida.{'\n'}
+        No entanto, alguns casos requerem urgência, devido à gravidade da situação.{'\n'}
+        Se não forem devidamente tratados, os problemas de ordem emocional podem afetar a nossa saúde física. O estresse, por exemplo, pode provocar dores de cabeça, resfriados, doenças crônicas no estômago e perda do desejo sexual.{'\n'}
+        Confira, a seguir, alguns dos sintomas que indicam a necessidade imediata de fazer terapia.{'\n'}
         </Text>
       </View>
 

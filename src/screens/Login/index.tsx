@@ -35,7 +35,7 @@ export default function Login({ navigation }) {
     return (
         <View style={styles.container}>
             <View style={styles.up}>
-                <Text> LOGO </Text>
+                <Text> HOME THERAPY </Text>
             </View>
             <View style={styles.card}>
                 <View>

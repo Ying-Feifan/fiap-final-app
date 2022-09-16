@@ -27,9 +27,9 @@ export const styles = StyleSheet.create({
         alignItems: 'center',
     },
     image: {
-        width: 100,
-        height: 100,
-        borderRadius: 50
+        width: 70,
+        height: 70,
+        borderRadius: 35
     },
     containerBio: {
         paddingLeft: 20
@@ -38,21 +38,13 @@ export const styles = StyleSheet.create({
         fontSize: 23
     },
     desc: {
-        fontSize: 11,
+        fontSize: 13,
         marginTop: 5,
         color: theme.colors.grey[700]
     },
-    containerContact: {
-        flexDirection: 'row',
-        alignItems: 'center',
-        marginTop: 5
+    title: {
+        marginTop: 30,
+        fontSize: 30,
+        color: theme.colors.grey[700]
     },
-    contact: {
-        fontSize: 12,
-        marginLeft: 10,
-        fontWeight: '500'
-    },
-    containerHeart: {
-        paddingLeft: 45
-    }
 })

@@ -4,7 +4,8 @@ export const styles = StyleSheet.create({
   tabTitle: {
     marginHorizontal: 30,
     marginVertical: 20,
-    fontSize: 60,
+    fontSize: 40,
+    marginTop: 50
   },
   container: {
     flex: 1,

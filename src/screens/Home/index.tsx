@@ -4,7 +4,7 @@ import { styles } from './styles';
 
 export default function Home() {
   return (
-    <ScrollView>
+    <ScrollView showsVerticalScrollIndicator={false}>
 
       <View>
         <Text style={styles.tabTitle}>Feed</Text>

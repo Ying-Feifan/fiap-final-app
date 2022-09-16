@@ -9,31 +9,30 @@ const dataFavorites = [
     key: String(Math.random()),
     image: require('../../assets/images/woman1.jpeg'),
     name: 'Susana Silva',
-    descricao: 'Psicóloga há 7 anos com\nespecialização em psicologia\ndo sono'
+    message: 'Oi, tudo bem?'
   },
   {
     key: String(Math.random()),
     image: require('../../assets/images/man1.jpeg'),
     name: 'Gustavo Alves',
-    descricao: 'Psicólogo há 8 anos com\nespecialização em psicologia\norganizacional'
+    message: 'Meu orçamento é de R$70,00 por consulta'
   },
   {
     key: String(Math.random()),
     image: require('../../assets/images/woman2.jpeg'),
     name: 'Isabele Morais',
-    descricao: 'Psicóloga há 3 anos com\nespecialização em psicologia\nescolar/educacional'
+    message: 'Obrigada 😄'
   },
   {
     key: String(Math.random()),
     image: require('../../assets/images/man2.jpeg'),
     name: 'Marcio Pereira',
-    descricao: 'Psicólogo há 8 anos com\nespecialização em psicologia\njurídica'
+    message: 'Podemos fazer uma sessão experimental'
   },
 ]
 
 export default function Messages() {
   const [search, setSearch] = useState("");
-  const [liked, setLiked] = useState(true);
 
   return (
     <View style={styles.container}>
@@ -47,28 +46,19 @@ export default function Messages() {
           <AntDesign name="search1" color={theme.colors.dark} size={24} />
         </TouchableOpacity>
 
-        <ScrollView>
+        <Text style={styles.title}>All Messages</Text>
+
+        <ScrollView style={{marginBottom: 20}}>
+          
           {dataFavorites.map((items) =>
           
           <View style={styles.containerInfos} key={items.key}>
             <Image style={styles.image} source={items.image} />
             <TouchableOpacity style={styles.containerBio}>
               <Text style={styles.name}>{items.name}</Text>
-              <Text style={styles.desc}>{items.descricao}</Text>
-              <View style={styles.containerContact}>
-              <FontAwesome5 name="whatsapp-square" size={20} color={theme.colors.black} />
-              <Text style={styles.contact}>Entre em contato</Text>
-              </View>
+              <Text style={styles.desc}>{items.message}</Text>
             </TouchableOpacity>
-
-            <TouchableOpacity style={styles.containerHeart} onPress={() => setLiked(!liked)}>
-              {liked 
-              ? 
-              <AntDesign name="heart" size={30} color={theme.colors.red} />
-              :
-              <AntDesign name="hearto" size={30} color={theme.colors.red} />
-            }
-            </TouchableOpacity>
+            
           </View>
           )}
         </ScrollView>

@@ -12,10 +12,11 @@ export default function Login({ navigation }) {
     const [password, setPassword] = useState("");
 
     const _login = async () => {
+        navigation.navigate('Routes')
         let response = await loginService.login(email, password);
         console.log(response);
         if (response) {
-            navigation.navigate('Home')
+            navigation.navigate('Routes')
         }
     }
 

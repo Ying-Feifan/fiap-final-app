@@ -13,6 +13,7 @@ export const theme = ({
             500: '#A9A9A9',
             400: '#C0C0C0',
             300: '#D3D3D3'
-        }
+        },
+        waterGreen: '#0E5E6F'
     }
 })

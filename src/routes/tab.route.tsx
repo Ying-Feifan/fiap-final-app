@@ -6,11 +6,11 @@ import Map from '../screens/Map';
 import Settings from '../screens/Settings';
 import Messages from '../screens/Messages';
 import Favorites from '../screens/Favorites';
-import FavButton from '../components/FavButton';
+import MapButton from '../components/MapButton';
 
 import {theme} from '../assets/colors';
 
-import { FontAwesome5, MaterialCommunityIcons, FontAwesome } from '@expo/vector-icons';
+import { FontAwesome5, MaterialCommunityIcons, FontAwesome, MaterialIcons } from '@expo/vector-icons';
 import Home from '../screens/Home';
 
 const Tab = createBottomTabNavigator();
@@ -35,38 +35,41 @@ export default function Routes(){
                     <FontAwesome5 name="home" size={22} color={theme.colors.darkGrey} />},
                 }}
                 />
-            <Tab.Screen 
-                name="Map" 
-                component={Map}
+
+                <Tab.Screen 
+                name="Favorites" 
+                component={Favorites}
                 options={{
-                    tabBarLabel: 'Procurar',
+                    tabBarLabel: 'Favoritos',
                     tabBarActiveTintColor: theme.colors.white,
                     tabBarInactiveTintColor: theme.colors.darkGrey,
                     tabBarLabelStyle: {fontSize: 13},
                     tabBarStyle: {backgroundColor: theme.colors.dark, height: 85, borderTopRightRadius: 12, borderTopLeftRadius: 12},
-                    tabBarIcon: ({focused}) => { 
-                        return focused 
-                        ? 
-                        <MaterialCommunityIcons name="map-search-outline" size={23} color={theme.colors.white} /> 
-                        : 
-                        <MaterialCommunityIcons name="map-search-outline" size={23} color={theme.colors.darkGrey} />},
+                    tabBarIcon: ({focused}) => {
+                            return focused
+                            ?
+                            <MaterialIcons name="favorite" size={25} color={theme.colors.white} />
+                            :
+                            <MaterialIcons name="favorite" size={25} color={theme.colors.darkGrey} />
+                        }
                   }}
                 />
             <Tab.Screen 
-                name="Favorites" 
-                component={Favorites}
+                name="Map" 
+                component={Map}
                 options={{
                     tabBarLabel: '',
                     tabBarStyle: {backgroundColor: theme.colors.dark, height: 85, borderTopRightRadius: 12, borderTopLeftRadius: 12},
-                    tabBarIcon: ({focused}) => {
-                        return focused
-                        ?
-                        <FavButton />
-                        :
-                        <FavButton />
-                    }
+                    tabBarIcon: ({focused}) => { 
+                        return focused 
+                        ? 
+                        <MapButton /> 
+                        : 
+                        <MapButton />
+                    },
                 }}
                 />
+            
             <Tab.Screen 
                 name="Messages" 
                 component={Messages}

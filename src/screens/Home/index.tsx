@@ -1,13 +1,15 @@
-import { View, Text, Image , ScrollView} from 'react-native';
+import { View, Text, Image , ScrollView, SafeAreaView} from 'react-native';
 
 import { styles } from './styles';
 
 export default function Home() {
   return (
+    <SafeAreaView>
+
     <ScrollView showsVerticalScrollIndicator={false}>
 
       <View>
-        <Text style={styles.tabTitle}>Feed</Text>
+        <Text style={styles.tabTitle}>HomeTherapy</Text>
       </View>
 
       <View style={styles.container}>
@@ -37,5 +39,6 @@ export default function Home() {
       </View>
 
     </ScrollView>
+    </SafeAreaView>
   );
 }

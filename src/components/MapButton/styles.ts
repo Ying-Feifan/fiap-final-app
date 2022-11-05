@@ -9,7 +9,7 @@ export const styles = StyleSheet.create({
     button: {
         alignItems: 'center',
         justifyContent: 'center',
-        backgroundColor: theme.colors.red,
+        backgroundColor: theme.colors.waterGreen,
         height: 60,
         width: 70,
         borderRadius: 30,
